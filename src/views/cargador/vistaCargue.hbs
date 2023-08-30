@@ -1,0 +1,31 @@
+<div class='container'>
+  <h4 style='text-align: center; margin-bottom: 5rem;'><i class='bx bx-upload'></i> Cargar registros</h4>
+
+  <div class='row'>
+    <div class='col s12 center-align'>
+      <a href='/img/formato_excel_preparacion.PNG' target='_blank' style='color: #ff8018;'><i class='bx bxs-info-circle'></i> Formato del archivo</a>
+    </div>
+    <div class='col s12'>
+      <form action='/cargue/guardeExcel' method='POST' enctype='multipart/form-data'>
+        <input type='text' name='tipoCargue' value='cargue_infobip_sms' class='displayNone' />
+        <div class='file-field input-field'>
+          <div class='btn orange darken-2 accent-4'>
+            <span>Archivo</span>
+            <i class='bx bxs-file' style='font-size: 1rem;'></i>
+            <input type='file' id='fileExcel' name='fileExcel' />
+          </div>
+          <div class='file-path-wrapper'>
+            <input class='file-path validate' type='text' placeholder='Seleccione archivo Excel' />
+          </div>
+        </div>
+
+        <div class='col s12 center-align'>
+          <button id='btnCargarExcel' class='btn orange darken-2 accent-4' type='submit'>Vista previa Excel <i class='bx bxs-show' style='font-size: 1rem;'></i></button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<script src='/js/guardianCargadores.js'></script>
+<script src='/js/cargador/vistaInputFile.js'></script>

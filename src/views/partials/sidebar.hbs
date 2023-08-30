@@ -1,0 +1,43 @@
+{{! NAV }}
+
+<div class='sidebar close'>
+  <div class='logo-details' style="justify-content: center;">
+    <img src="/img/sanbuena.ico" alt="icono_sanBuena" style="height: 75%; whidth:75%; ">
+  </div>
+  <ul class='nav-links'>
+
+    <li>
+      <a href='/cargue/cargueMasivo'>
+        <i class='bx bx-upload'></i>
+        <span class='link_name'>Cargador Masivo</span>
+      </a>
+      <ul class='sub-menu blank'>
+        <li><a class='link_name' href='/cargue/cargueMasivo'>Cargador Masivo</a></li>
+      </ul>
+    </li>
+    
+    <li>
+      <a href='/reporting/report'>
+        <i class='bx bxs-dashboard' ></i>
+        <span class='link_name'>Reporting</span>
+      </a>
+      <ul class='sub-menu blank'>
+        <li><a class='link_name' href='/reporting/report'>Reporting</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <div class='profile-details'>
+        <div class='profile-content'>
+          <img src='/img/undraw_pic_profile_re_7g2h.svg' alt='profileImg' />
+        </div>
+        <div class='name-job'>
+          <div class='profile_name' style='font-size: smaller;'>{{user.PER_CUSUARIO}}</div>
+        </div>
+        <a href='/logout?msg=Manual+por+usuario'>
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,29 @@
+.main {
+  /* background: url('/img/undraw_fast_car_p-4-cu.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+  /* border: 1px solid #000; */
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.cont_marquee {
+  font-size: 1.6rem;
+  font-weight: bold;
+  max-width: 90%;
+}
+
+.txt-orange {
+  color: #db5b00;
+}
+
+/* .msg_banner {
+  font-size: 2rem;
+} */
+/* @media screen and (min-width: 768px) {
+  .main {
+    position: relative;
+    height: calc(100vh - 80px);
+  }
+} */

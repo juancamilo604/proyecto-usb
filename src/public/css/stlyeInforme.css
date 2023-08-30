@@ -1,0 +1,15 @@
+.txt-online {
+  color: #6c916c;
+  font-weight: bold;
+}
+
+.txt-offline {
+  color: #c37070;
+  font-weight: bold;
+}
+
+.txt-nologin {
+  color: #7d859b;
+  font-weight: bold;
+  font-style: italic;
+}

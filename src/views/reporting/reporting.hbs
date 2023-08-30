@@ -1,0 +1,130 @@
+<div class="tarjetas">
+  <div class="tarjeta" style="background-color:#00acc1;">
+    <div class="cuerpo">
+      <div>
+        <span class="cantidadEstudiantes">0</span>
+        <p>Estudiante</p>
+      </div>
+      <div>
+        <img src="/img/barras.png" alt="">
+      </div>
+
+    </div>
+    <div class="pie">
+      <span href="#" id="infoEstudiante">Más información</span>
+    </div>
+  </div>
+  <div class="tarjeta" style="background-color:#ff5252;">
+    <div class="cuerpo">
+      <div>
+        <span class="cantidadProgramas">0</span>
+        <p>Programas</p>
+      </div>
+      <div>
+        <img src="/img/barras.png" alt="">
+      </div>
+
+    </div>
+    <div class="pie-card2">
+      <span href="#" id="infoPrograma">Más información</span>
+    </div>
+  </div>
+  <div class="tarjeta" style="background-color: #ffa726;">
+    <div class="cuerpo">
+      <div>
+  
+        <p>Reporte</p>
+      </div>
+      <div>
+        <img src="/img/barras.png" alt="">
+      </div>
+
+    </div>
+    <div class="pie-card3">
+      <span href="#" id="infoMateria">Más información</span>
+    </div>
+  </div>
+</div>
+<div id="contentGraficas">
+  <div class="section1">
+    <div class="box-1">
+      <div>
+        <select id="selFiltro" class="select" onchange="updateChart()">
+          <option value="" disabled selected>Choose your option</option>
+        </select>
+      </div>
+      <canvas id="chart-bar1"></canvas>
+      <div>
+        <canvas id="chart-doghnats1" style="display: none;"></canvas>
+        <canvas id="chart-line1" style="display: none;"></canvas>
+      </div>
+    </div>
+    <div class="box-2">
+      <div>
+        <canvas id="chart-radar1"></canvas>
+      </div>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="section2" style="display: none;">
+    <div>
+      <ul id="listaMaterias">
+      </ul>
+    </div>
+    <div>
+      <ul id="listaEstudents">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class='col s12' style='margin-bottom: 4rem;'>
+  <div id="contentTableE" style="display: none;">
+    <table id='tablaEstudiante' class='striped centered responsive-table table-style'>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Materia</th>
+          <th>Ciclo</th>
+          <th>Primer Corte</th>
+          <th>Segundo Corte</th>
+          <th>Tercer Corte</th>
+          <th>Definitiva</th>
+
+        </tr>
+      </thead>
+      <tbody id='bodyTablaE'>
+      </tbody>
+    </table>
+  </div>
+  <div id="contentTableP" style="display: none;">
+    <table id='tablaPrograma' class='striped centered responsive-table table-style'>
+      <thead>
+        <tr>
+          <th>Programa</th>
+          <th>Ciclo</th>
+        </tr>
+      </thead>
+      <tbody id='bodyTablaP'>
+      </tbody>
+    </table>
+  </div>
+  <div id="contentTableM" style="display: none;">
+    <table id='tablaMateria' class='striped centered responsive-table table-style'>
+      <thead>
+        <tr>
+          <th>registro Clase</th>
+          <th>registro de catalogo</th>
+          <th>Materia</th>
+        </tr>
+      </thead>
+      <tbody id='bodyTablaM'>
+      </tbody>
+    </table>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src='/js/reporting/reporting.js'></script>

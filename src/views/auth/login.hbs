@@ -1,0 +1,38 @@
+
+<div class='container-login'>
+  <img class='wave' src='/img/wave.png' alt='Img' />
+  <div class='img'>
+    <img src='/img/undraw_data_processing_yrrv.svg' alt='Fondito' />
+  </div>
+  <div class='login-container'>
+    <form action='/login' method='POST'>
+      <img class='avatar' src='/img/undraw_male_avatar_g98d.svg' alt='Avatar' />
+      <h2>Bienvenido</h2>
+      <div class='input-div one'>
+        <div class='i'>
+          <i class='bx bx-user-circle'></i>
+        </div>
+        <div>
+          <h5>Usuario</h5>
+          <input class='input' type='text' id='username' name='username' autocomplete='off' />
+        </div>
+      </div>
+      <div class='input-div two'>
+        <div class='i'>
+          <i class='bx bxs-lock'></i>
+        </div>
+        <div>
+          <h5>Contraseña</h5>
+          <input class='input' type='password' id='password' name='password' />
+        </div>
+        <div id='hideShowPassWord' class='hideShowPassWord'>
+          <i class='bx bx-show-alt'></i>
+        </div>
+      </div>
+      <a href='#'></a>
+      <input id='btnLogin' type='submit' class='btn' value='Login' />
+    </form>
+  </div>
+</div>
+
+<script src='/js/login.js'></script>

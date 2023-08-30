@@ -1,0 +1,210 @@
+.container_formsito {
+  background-color: #f8f8f8ee;
+}
+
+.container_formsito form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+.container_formsito .form-busqueda {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.container_formsito h5 {
+  padding: 1rem;
+}
+
+/* * boton de enviar formulario */
+button {
+  border: none;
+}
+
+.cont-btncito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.btncito {
+  position: relative;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee;
+  background: #ee5253;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btncito.btn_excel {
+  background: #27ae60;
+}
+
+.btncito:hover {
+  color: #3f3f3f;
+}
+
+.btncito span {
+  display: block;
+  position: absolute;
+  background-color: #3f3f3f;
+}
+
+.btncito span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.btncito:hover span:nth-child(1) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.btncito span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleY(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.btncito:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.btncito span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btncito:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btncito span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.btncito:hover span:nth-child(4) {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.container_carguesito h1 {
+  text-align: center;
+}
+.container_carguesito form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_carguesito .file-field {
+  width: 500px;
+}
+
+/* * asd */
+.switchCSS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.switchCSS .switch {
+  display: none;
+  visibility: hidden;
+}
+
+.switchCSS .lbl {
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  background: linear-gradient(90deg, #ee5253, transparent);
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.switchCSS .lbl::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 20px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  /* background-color: #fff; */
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+@keyframes switchAnime {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.switch:checked + .lbl::after {
+  animation: switchAnime 0.3s forwards;
+  left: 33px;
+  /* background-color: #333; */
+}
+
+.switch:checked + .lbl {
+  background: linear-gradient(90deg, transparent, #0abde3);
+}
+
+.container_informes .graficasa {
+  height: 400px;
+  margin: 0 2rem;
+}
+
+.container_informes .container-grafica {
+  height: 500px;
+}
+
+.container_informes .row canvas {
+  margin: 3rem 0;
+}

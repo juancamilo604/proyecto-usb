@@ -1,0 +1,203 @@
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.displayNone {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.containersito {
+  margin: 2rem 4rem;
+}
+
+.centerTopDataTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+/* modal notificaciones inicio turno */
+.img_noti {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card .card-content p {
+  font-size: 1.2rem;
+}
+
+#contModalNoti .card {
+  border-radius: 4px;
+}
+
+#ulNotiMasivas li a {
+  color: aliceblue;
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px; /* Tamaño del scroll en vertical */
+  height: 4px; /* Tamaño del scroll en horizontal */
+  padding: 4px;
+  /* background-color: #fff; */
+  /* box-shadow: inset 0 0 3px grey; */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.modal::-webkit-scrollbar-thumb {
+  background: #f50000;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.modal::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.cont-filtros {
+  background: #ffd8bc40;
+  border-radius: 8px;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+/* Posiblemente pasar a otro archivo miesntras aqui lo dejo */
+
+.lista_hojas ol {  
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.box_result_excel {
+  border-radius: 8px;
+  width: 50%;
+  padding: 1rem;
+  margin: 4rem auto;
+  box-shadow: 0 0 15px 1px rgb(0 0 0 / 10%);
+}
+
+.box_result_excel #linkResultadoExcel {
+  font-weight: bold;
+  color: #dd3542;
+}
+
+
+/* ** Scroll Tablas */
+.dataTables_scrollBody::-webkit-scrollbar {
+  width: 10px; /* Tamaño del scroll en vertical */
+  height: 8px; /* Tamaño del scroll en horizontal */
+  padding: 4px;
+  background-color: #cfdde6;
+  /* box-shadow: inset 0 0 3px grey; */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.dataTables_scrollBody::-webkit-scrollbar-thumb {
+  background: #0078c1;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.dataTables_scrollBody::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.dataTables_scrollBody::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative !important;
+  display: inline-block !important;
+  width: 60px !important;
+  height: 34px !important;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* The slider */
+.slider {
+  position: absolute !important;
+  cursor: pointer !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: #ccc !important;
+  -webkit-transition: .4s !important;
+  transition: .4s !important;
+}
+
+.slider:before {
+  position: absolute !important;
+  content: "" !important;
+  height: 20px !important;
+  width: 20px !important;
+  left: 4px !important;
+  bottom: 4px !important;
+  background-color: white !important;
+  -webkit-transition: .4s !important;
+  transition: .4s !important;
+}
+
+
+[type="checkbox"]:checked+span:not(.lever):before {
+  top: 0px;
+  border-top: 2px solid #26a69a !important;
+  border-left: 2px solid #26a69a !important;
+  border-right: 2px solid #26a69a !important;
+  border-bottom: 2px solid #26a69a !important;
+  
+}
+input:checked + .slider {
+  background-color: #2196F3 !important;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3 !important;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px) !important;
+  -ms-transform: translateX(26px) !important;
+  transform: translateX(26px) !important;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px !important;
+}
+
+.slider.round:before {
+  border-radius: 50% !important;
+}
